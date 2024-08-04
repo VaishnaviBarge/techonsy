@@ -14,19 +14,13 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- font-awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body style="background-color: black; font-family: 'Roboto'">
@@ -34,13 +28,13 @@
         <a class="navbar-brand p-2" href="index.html"
           ><img src="images/Logo.png" alt="No Logo" width="200"
         /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Services
                 </a>
                 <div class="dropdown-menu dropdown-menu-right custom-dropdown">
@@ -62,7 +56,7 @@
             </li>
   
             <li class="nav-item dropdown px-3">
-              <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Expertise
               </a>
               <div class="dropdown-menu dropdown-menu-right custom-dropdown">
@@ -147,43 +141,52 @@
     <div class="job-description">
         <h4 class="text-light">Apply for this position:</h4>
         <form id="contactForm" class="container mt-5 m-sm-0"> 
-            <div class="row justify-content-center m-4">
-                <div class="col-md-12 col-sm-12">
-                    <div class="form-group mb-3">
-                        <label for="name" class="form-label text-light">Full Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name" required>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12">
+                  <div class="form-group mb-3">
+                    <label for="name" class="form-label text-light">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name" required >
+                  </div>
                 </div>
-                <div class="col-md-12 col-sm-12">
-                    <div class="form-group mb-3">
-                        <label for="email" class="form-label text-light">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email" required>
-                    </div>
+                <div class="col-md-5 col-sm-12">
+                  <div class="form-group mb-3">
+                    <label for="email" class="form-label text-light">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email" required >
+                  </div>
                 </div>
-                <div class="col-md-12 col-sm-12">
-                    <div class="form-group mb-3">
-                        <label for="phoneNo" class="form-label text-light">Phone</label>
-                        <input type="tel" class="form-control" id="phoneNo" name="phoneNo" placeholder="Enter your Phone Number" required>
-                    </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-sm-12">
+                  <div class="form-group mb-3">
+                    <label for="subject" class="form-label text-light">Phone</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter your Phone Number" required >
+                  </div>
                 </div>
-                <div class="col-md-12 col-sm-12">
-                    <div class="form-group mb-3">
-                        <label for="techStack" class="form-label text-light">Tech Stack</label>
-                        <input type="text" class="form-control" id="techStack" name="techStack" placeholder="Enter your Tech Stack" required>
-                    </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="form-group mb-3">
+                    <label for="message" class="form-label text-light">Tech Stack</label>
+                    <textarea class="form-control " id="message" name="message" rows="1" placeholder="Enter your Tech Stack" required  ></textarea>
+                  </div>
                 </div>
-                <div class="col-md-12 col-sm-12">
-                    <div class="form-group mb-3">
-                        <label for="exp" class="form-label text-light">Experience</label>
-                        <input type="text" class="form-control" id="exp" name="exp" placeholder="Enter your Experience" required>
-                    </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="form-group mb-3">
+                    <label for="message" class="form-label text-light">Experience</label>
+                    <textarea class="form-control " id="message" name="message" rows="1" placeholder="Enter your Experience" required  ></textarea>
+                  </div>
                 </div>
-                <div class="col-md-12 col-sm-12">
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-sm-12">
                     <div class="form-group mb-3">
                         <label for="resume" class="form-label text-light">Resume</label>
                         <input type="file" class="form-control" id="resume" name="resume" required>
                     </div>
                 </div>
+              </div>
                 <div class="col-md-12 col-sm-12">
                     <div class="form-group mb-3">
                         <p class="text-light mx-1">By using this form, you agree with the storage and handling of your data by this website.</p>
